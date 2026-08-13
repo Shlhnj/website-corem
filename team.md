@@ -2,8 +2,8 @@
 layout: page
 title: Team
 title_id: Tim
-tag: 04 — Recurring contributors
-tag_id: 04 — Kontributor tetap
+tag: 04. Recurring contributors
+tag_id: 04. Kontributor tetap
 dek: Names that recur across CoREM-affiliated papers. Roles are drawn from published affiliations, not internal titles.
 dek_id: Nama-nama yang berulang kali muncul dalam publikasi berafiliasi CoREM. Peran ditulis berdasarkan afiliasi dalam publikasi, bukan jabatan resmi internal.
 photo: team_photo.png
