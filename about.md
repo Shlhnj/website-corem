@@ -2,8 +2,8 @@
 layout: page
 title: About
 title_id: Profil
-tag: 01 — About the center
-tag_id: 01 — Tentang pusat studi
+tag: 01. About the center
+tag_id: 01. Tentang pusat studi
 dek: Housed within the Universitas Diponegoro, working across departments in oceanography, marine science, and engineering.
 dek_id: Berada di bawah Fakultas Perikanan dan Ilmu Kelautan, bekerja lintas departemen oseanografi, ilmu kelautan, dan teknik.
 photo: about_photo.png
