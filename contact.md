@@ -2,8 +2,8 @@
 layout: page
 title: Contact
 title_id: Kontak
-tag: 05 — Reach the lab
-tag_id: 05 — Hubungi kami
+tag: 05. Reach the lab
+tag_id: 05. Hubungi kami
 dek: For collaboration, data requests, or student inquiries.
 dek_id: Untuk kerja sama, permintaan data, atau pertanyaan mahasiswa.
 photo: contact_photo.png
