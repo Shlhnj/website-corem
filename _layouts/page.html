@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<section class="page-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        {% if page.tag %}<div class="tag">{{ page.tag }}</div>{% endif %}
+        <h2>{{ page.title }}</h2>
+      </div>
+      {% if page.dek %}<p>{{ page.dek }}</p>{% endif %}
+    </div>
+    <div class="page-body">
+      {{ content }}
+    </div>
+  </div>
+</section>

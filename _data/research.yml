@@ -1,0 +1,34 @@
+- code: CVI
+  title: Coastal vulnerability & shoreline change
+  summary: >-
+    Coastal Vulnerability Index modeling and DSAS-based shoreline forecasting,
+    mapping erosion and accretion against land use and settlement exposure.
+  sites: Pekalongan · Demak (Timbulsloko) · Suriname
+
+- code: MGR
+  title: Mangrove rehabilitation & blue carbon
+  summary: >-
+    Chlorophyll-a and productivity monitoring in replanted mangrove belts, plus
+    the microbial ecology of mangrove-forest sediment.
+  sites: Mojo, Pemalang
+
+- code: RS
+  title: Remote sensing & ocean modeling
+  summary: >-
+    Sentinel-1/2 and scatterometer analysis of suspended sediment, sea-level
+    rise, land subsidence, surface winds, and sea surface temperature.
+  sites: North Java coast · Cenderawasih Bay, Papua
+
+- code: WQ
+  title: Water quality & pollution
+  summary: >-
+    Nitrate, phosphate, TSS, and chlorophyll dynamics from small-scale industry
+    and batik-dye runoff, modeled hydrodynamically through tidal cycles.
+  sites: Pekalongan estuaries
+
+- code: DM
+  title: Disaster mitigation engineering
+  summary: >-
+    Structural and non-structural mitigation design, including permeable
+    hybrid-engineering breakwaters tested against wave transmission.
+  sites: Timbulsloko, Demak

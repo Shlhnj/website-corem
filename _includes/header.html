@@ -1,0 +1,14 @@
+<header class="site">
+  <nav>
+    <a class="brand" href="{{ '/' | relative_url }}">
+      {{ site.title }}
+      <span class="full">{{ site.subtitle }}</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <ul class="navlinks" id="navlinks">
+      {% for item in site.data.nav %}
+      <li><a href="{{ item.url | relative_url }}"{% if page.url contains item.url %} class="current"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

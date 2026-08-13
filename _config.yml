@@ -1,0 +1,45 @@
+title: CoREM
+subtitle: Center for Coastal Rehabilitation and Disaster Mitigation Studies
+description: >-
+  CoREM (Pusat Kajian Mitigasi Bencana dan Rehabilitasi Pesisir) studies coastal
+  erosion, mangrove rehabilitation, water quality, and disaster mitigation along
+  Java's north coast, at Universitas Diponegoro.
+lang: en
+
+# --- GitHub Pages ---
+# If this repo is served at username.github.io/reponame, set baseurl to "/reponame".
+# If this repo IS username.github.io (a user/org site), leave baseurl empty.
+baseurl: ""
+url: "https://your-username.github.io"
+
+# --- Organization ---
+institution: Universitas Diponegoro
+location: Semarang, Central Java, Indonesia
+contact_email: "corem@undip.ac.id"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /:categories/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

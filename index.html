@@ -1,0 +1,112 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <svg class="hero-contours" viewBox="0 0 1200 700" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-50,560 C150,520 300,610 500,560 C700,510 850,600 1050,540 C1150,510 1200,540 1260,520" fill="none" stroke="#2B4A6B" stroke-width="1" opacity="0.18"/>
+    <path d="M-50,600 C180,570 320,650 520,610 C720,570 880,640 1080,590 C1180,565 1220,585 1270,565" fill="none" stroke="#2B4A6B" stroke-width="1" opacity="0.15"/>
+    <path d="M-50,640 C200,615 340,680 540,650 C740,615 900,675 1100,635 C1190,615 1230,630 1280,615" fill="none" stroke="#2B4A6B" stroke-width="1" opacity="0.12"/>
+    <path d="M-50,520 C160,470 310,560 510,505 C710,455 860,545 1060,480 C1160,450 1200,480 1260,460" fill="none" stroke="#45633F" stroke-width="1" opacity="0.13"/>
+  </svg>
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span>{{ site.institution }} · {{ site.location }}</div>
+    <h1>Tracking how the <em>coast</em> moves, and helping communities move with it.</h1>
+    <p class="hero-sub">{{ site.title }} studies coastal erosion, mangrove rehabilitation, water quality, and disaster mitigation along Java's north coast — combining field survey, remote sensing, and geospatial modeling to give local governments usable, site-specific evidence.</p>
+    <div class="hero-meta">
+      <div><strong>{{ site.data.publications | size }}+</strong>peer-reviewed outputs on record</div>
+      <div><strong>{{ site.data.research | size }}</strong>core research programs</div>
+      <div><strong>6+</strong>active field sites, Pekalongan to Suriname</div>
+    </div>
+  </div>
+</section>
+
+{% include shoreline-divider.html %}
+
+<section id="about-teaser">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="tag">01 — About the center</div>
+        <h2>A field station for a changing coastline</h2>
+      </div>
+      <p><a href="{{ '/about/' | relative_url }}">Read the full profile &rarr;</a></p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <div class="full-name">
+          Pusat Kajian Mitigasi Bencana dan Rehabilitasi Pesisir (PKMBRP)
+          <span>Indonesian name for CoREM · affiliated with Indonesia's Center of Excellence (PUI) network</span>
+        </div>
+        <p>CoREM was established at {{ site.institution }} to study coastal disaster risk and support the rehabilitation of degraded shorelines along Central Java's north coast — a region where land subsidence, tidal flooding, and mangrove loss compound each other year over year.</p>
+      </div>
+      <div>
+        <p>The center combines in-situ field survey and water sampling, satellite and drone-based remote sensing, and geospatial modeling — applied to real, named places, not abstractions. Pekalongan's batik-industry estuaries. Demak's disappearing villages. Pemalang's replanted mangrove belt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include shoreline-divider.html %}
+
+<section id="research-teaser">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="tag">02 — Research programs</div>
+        <h2>Five lines of active work</h2>
+      </div>
+      <p><a href="{{ '/research/' | relative_url }}">See all programs &rarr;</a></p>
+    </div>
+    <div class="focus-grid">
+      {% for program in site.data.research %}
+      <div class="focus-card">
+        <span class="code">{{ program.code }}</span>
+        <h3>{{ program.title }}</h3>
+        <p>{{ program.summary }}</p>
+        <div class="sites">{{ program.sites }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include shoreline-divider.html %}
+
+<section id="news-teaser">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="tag">03 — News</div>
+        <h2>Latest from the lab</h2>
+      </div>
+      <p><a href="{{ '/news/' | relative_url }}">View all news &rarr;</a></p>
+    </div>
+    <ul class="news-list">
+      {% for post in site.posts limit: 3 %}
+      <li class="news-item">
+        <div class="news-date mono">{{ post.date | date: "%d %b %Y" }}</div>
+        <div>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+        </div>
+      </li>
+      {% else %}
+      <li class="news-item"><p>No news posts yet — add Markdown files to <code>_posts/</code> to populate this feed.</p></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="contact-block" id="contact-teaser">
+  <div class="wrap">
+    <div>
+      <h2>Reach the lab</h2>
+      <p>For collaboration, data requests, or student inquiries, CoREM operates out of the Integrated Laboratory building on {{ site.institution }}'s Tembalang campus.</p>
+    </div>
+    <div class="contact-detail">
+      <a href="{{ '/contact/' | relative_url }}">Full contact details &rarr;</a>
+    </div>
+  </div>
+</section>
