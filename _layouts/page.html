@@ -5,11 +5,26 @@ layout: default
   <div class="wrap">
     <div class="section-head">
       <div>
-        {% if page.tag %}<div class="tag">{{ page.tag }}</div>{% endif %}
-        <h2>{{ page.title }}</h2>
+        {% if page.tag %}
+        <div class="tag">
+          <span class="lang-en">{{ page.tag }}</span><span class="lang-id">{{ page.tag_id | default: page.tag }}</span>
+        </div>
+        {% endif %}
+        <h2>
+          <span class="lang-en">{{ page.title }}</span><span class="lang-id">{{ page.title_id | default: page.title }}</span>
+        </h2>
       </div>
-      {% if page.dek %}<p>{{ page.dek }}</p>{% endif %}
+      {% if page.dek %}
+      <p>
+        <span class="lang-en">{{ page.dek }}</span><span class="lang-id">{{ page.dek_id | default: page.dek }}</span>
+      </p>
+      {% endif %}
     </div>
+
+    {% if page.photo %}
+      {% include photo.html filename=page.photo alt=page.title class="banner" %}
+    {% endif %}
+
     <div class="page-body">
       {{ content }}
     </div>

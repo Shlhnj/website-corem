@@ -1,12 +1,18 @@
 - title: About
+  title_id: Profil
   url: /about/
 - title: Research
+  title_id: Penelitian
   url: /research/
 - title: Publications
+  title_id: Publikasi
   url: /publications/
 - title: Team
+  title_id: Tim
   url: /team/
 - title: News
+  title_id: Berita
   url: /news/
 - title: Contact
+  title_id: Kontak
   url: /contact/

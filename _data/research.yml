@@ -1,34 +1,62 @@
 - code: CVI
   title: Coastal vulnerability & shoreline change
+  title_id: Kerentanan pesisir & perubahan garis pantai
   summary: >-
     Coastal Vulnerability Index modeling and DSAS-based shoreline forecasting,
     mapping erosion and accretion against land use and settlement exposure.
+  summary_id: >-
+    Pemodelan Indeks Kerentanan Pesisir dan prediksi perubahan garis pantai
+    berbasis DSAS, memetakan abrasi dan akresi terhadap tata guna lahan dan
+    permukiman.
   sites: Pekalongan · Demak (Timbulsloko) · Suriname
+  photo: research_photo1.png
 
 - code: MGR
   title: Mangrove rehabilitation & blue carbon
+  title_id: Rehabilitasi mangrove & karbon biru
   summary: >-
     Chlorophyll-a and productivity monitoring in replanted mangrove belts, plus
     the microbial ecology of mangrove-forest sediment.
+  summary_id: >-
+    Pemantauan klorofil-a dan produktivitas pada sabuk mangrove hasil
+    penanaman kembali, serta ekologi mikroba pada sedimen hutan mangrove.
   sites: Mojo, Pemalang
+  photo: research_photo2.png
 
 - code: RS
   title: Remote sensing & ocean modeling
+  title_id: Penginderaan jauh & pemodelan laut
   summary: >-
     Sentinel-1/2 and scatterometer analysis of suspended sediment, sea-level
     rise, land subsidence, surface winds, and sea surface temperature.
+  summary_id: >-
+    Analisis citra Sentinel-1/2 dan data scatterometer untuk sedimen
+    tersuspensi, kenaikan muka laut, penurunan muka tanah, angin permukaan,
+    dan suhu permukaan laut.
   sites: North Java coast · Cenderawasih Bay, Papua
+  photo: research_photo3.png
 
 - code: WQ
   title: Water quality & pollution
+  title_id: Kualitas air & pencemaran
   summary: >-
     Nitrate, phosphate, TSS, and chlorophyll dynamics from small-scale industry
     and batik-dye runoff, modeled hydrodynamically through tidal cycles.
+  summary_id: >-
+    Dinamika nitrat, fosfat, TSS, dan klorofil akibat limbah industri kecil
+    dan pewarna batik, dimodelkan secara hidrodinamika mengikuti siklus
+    pasang surut.
   sites: Pekalongan estuaries
+  photo: research_photo4.png
 
 - code: DM
   title: Disaster mitigation engineering
+  title_id: Rekayasa mitigasi bencana
   summary: >-
     Structural and non-structural mitigation design, including permeable
     hybrid-engineering breakwaters tested against wave transmission.
+  summary_id: >-
+    Desain mitigasi struktural dan non-struktural, termasuk pemecah gelombang
+    hibrida berpori yang diuji terhadap transmisi gelombang.
   sites: Timbulsloko, Demak
+  photo: research_photo5.png

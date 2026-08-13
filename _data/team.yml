@@ -3,33 +3,51 @@
   role: >-
     Listed contact for CoREM / PKMBRP. Co-author on Pekalongan pollution
     and Suriname flood-vulnerability work.
+  role_id: >-
+    Kontak resmi CoREM / PKMBRP. Turut menulis kajian pencemaran Pekalongan
+    dan kerentanan banjir Suriname.
 
 - initials: MZ
   name: Muhammad Zainuri
   role: >-
     Professor of Marine Biology, Head of the Department of Oceanography.
     Frequent lead author on water quality and productivity studies.
+  role_id: >-
+    Guru Besar Biologi Kelautan, Ketua Departemen Oseanografi. Kerap menjadi
+    penulis utama pada kajian kualitas air dan produktivitas perairan.
 
 - initials: AW
   name: Anindya Wirasatriya
   role: >-
     Coastal and Ocean Remote Sensing Laboratory. Leads much of the
     satellite and reanalysis-data modeling work.
+  role_id: >-
+    Laboratorium Penginderaan Jauh Pesisir dan Laut. Memimpin sebagian besar
+    pemodelan berbasis data satelit dan reanalisis.
 
 - initials: MJ
   name: Muhammad Shulhan Jihadi
   role: >-
     Graduate researcher (Marine Science). Co-authors across mangrove,
     sediment, and marine-mammal connectivity studies.
+  role_id: >-
+    Peneliti pascasarjana (Ilmu Kelautan). Turut menulis kajian mangrove,
+    sedimen, dan konektivitas mamalia laut.
 
 - initials: K
   name: Kunarso
   role: >-
     Oceanography Department. Long-running contributor on productivity,
     climate variability, and pollution modeling.
+  role_id: >-
+    Departemen Oseanografi. Kontributor jangka panjang pada pemodelan
+    produktivitas, variabilitas iklim, dan pencemaran.
 
 - initials: AI
   name: Aris Ismanto
   role: >-
     Oceanography Department. Regular co-author on nitrate, sediment,
     and coastal-vulnerability geospatial work.
+  role_id: >-
+    Departemen Oseanografi. Rutin menulis bersama pada kajian nitrat,
+    sedimen, dan kerentanan pesisir berbasis geospasial.

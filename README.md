@@ -73,6 +73,42 @@ Body text in Markdown.
 
 It will appear automatically on the homepage and the News page, newest first.
 
+## Bilingual (EN / ID)
+
+The site ships in English and Indonesian. A toggle in the header switches
+instantly (no page reload) and remembers the choice via `localStorage`.
+
+To add bilingual text to a page, wrap each language's content in a tagged
+block and add `markdown="1"` so Kramdown still parses Markdown inside it:
+
+```html
+<div class="lang-en" markdown="1">
+English content here.
+</div>
+
+<div class="lang-id" markdown="1">
+Konten bahasa Indonesia di sini.
+</div>
+```
+
+For short inline text (labels, headings, nav items), use `<span>` instead
+of `<div>` — same classes, no `markdown="1"` needed since it's plain text.
+
+Structured content in `_data/*.yml` (research programs, team roles) carries
+a parallel `_id` field (e.g. `title` / `title_id`) that pages read via
+Liquid, rather than duplicating the whole list.
+
+News posts (`_posts/`) are **not** duplicated per language — each post
+simply appears in whichever language it was written in.
+
+## Photos
+
+Each main page has a slot for a single photo, sourced from a fixed filename
+in `assets/images/` (see `assets/images/README.md` for the full list, e.g.
+`about_photo.png`, `research_photo1.png`–`research_photo5.png`,
+`team_photo.png`). Until a file is added, that spot shows a small dashed
+placeholder naming the expected file rather than a broken image.
+
 ## Content status
 
 The publication list, team list, and program descriptions were assembled from

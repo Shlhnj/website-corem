@@ -12,15 +12,32 @@ title: Home
   </svg>
   <div class="wrap">
     <div class="eyebrow"><span class="dot"></span>{{ site.institution }} · {{ site.location }}</div>
-    <h1>Tracking how the <em>coast</em> moves, and helping communities move with it.</h1>
-    <p class="hero-sub">{{ site.title }} studies coastal erosion, mangrove rehabilitation, water quality, and disaster mitigation along Java's north coast — combining field survey, remote sensing, and geospatial modeling to give local governments usable, site-specific evidence.</p>
+    <h1>
+      <span class="lang-en">Tracking how the <em>coast</em> moves, and helping communities move with it.</span>
+      <span class="lang-id">Memantau pergerakan <em>garis pantai</em>, dan mendampingi masyarakat pesisir menghadapinya.</span>
+    </h1>
+    <p class="hero-sub">
+      <span class="lang-en">{{ site.title }} studies coastal erosion, mangrove rehabilitation, water quality, and disaster mitigation along Java's north coast — combining field survey, remote sensing, and geospatial modeling to give local governments usable, site-specific evidence.</span>
+      <span class="lang-id">{{ site.title }} meneliti abrasi pantai, rehabilitasi mangrove, kualitas air, dan mitigasi bencana di pesisir utara Jawa — memadukan survei lapangan, penginderaan jauh, dan pemodelan geospasial untuk menghasilkan bukti ilmiah yang dapat langsung digunakan pemerintah daerah.</span>
+    </p>
     <div class="hero-meta">
-      <div><strong>{{ site.data.publications | size }}+</strong>peer-reviewed outputs on record</div>
-      <div><strong>{{ site.data.research | size }}</strong>core research programs</div>
-      <div><strong>6+</strong>active field sites, Pekalongan to Suriname</div>
+      <div><strong>{{ site.data.publications | size }}+</strong>
+        <span class="lang-en">peer-reviewed outputs on record</span>
+        <span class="lang-id">luaran ilmiah terekam</span>
+      </div>
+      <div><strong>{{ site.data.research | size }}</strong>
+        <span class="lang-en">core research programs</span>
+        <span class="lang-id">program penelitian inti</span>
+      </div>
+      <div><strong>6+</strong>
+        <span class="lang-en">active field sites, Pekalongan to Suriname</span>
+        <span class="lang-id">lokasi penelitian aktif, dari Pekalongan hingga Suriname</span>
+      </div>
     </div>
   </div>
 </section>
+
+{% include photo.html filename="home_photo.png" alt="CoREM fieldwork" class="banner" %}
 
 {% include shoreline-divider.html %}
 
@@ -28,10 +45,17 @@ title: Home
   <div class="wrap">
     <div class="section-head">
       <div>
-        <div class="tag">01 — About the center</div>
-        <h2>A field station for a changing coastline</h2>
+        <div class="tag">
+          <span class="lang-en">01 — About the center</span><span class="lang-id">01 — Tentang pusat studi</span>
+        </div>
+        <h2>
+          <span class="lang-en">A field station for a changing coastline</span>
+          <span class="lang-id">Stasiun lapangan untuk garis pantai yang terus berubah</span>
+        </h2>
       </div>
-      <p><a href="{{ '/about/' | relative_url }}">Read the full profile &rarr;</a></p>
+      <p><a href="{{ '/about/' | relative_url }}">
+        <span class="lang-en">Read the full profile &rarr;</span><span class="lang-id">Baca profil lengkap &rarr;</span>
+      </a></p>
     </div>
     <div class="about-grid">
       <div>
@@ -39,10 +63,16 @@ title: Home
           Pusat Kajian Mitigasi Bencana dan Rehabilitasi Pesisir (PKMBRP)
           <span>Indonesian name for CoREM · affiliated with Indonesia's Center of Excellence (PUI) network</span>
         </div>
-        <p>CoREM was established at {{ site.institution }} to study coastal disaster risk and support the rehabilitation of degraded shorelines along Central Java's north coast — a region where land subsidence, tidal flooding, and mangrove loss compound each other year over year.</p>
+        <p>
+          <span class="lang-en">CoREM was established at {{ site.institution }} to study coastal disaster risk and support the rehabilitation of degraded shorelines along Central Java's north coast — a region where land subsidence, tidal flooding, and mangrove loss compound each other year over year.</span>
+          <span class="lang-id">CoREM didirikan di {{ site.institution }} untuk mengkaji risiko bencana pesisir dan mendukung rehabilitasi garis pantai yang mengalami degradasi di sepanjang pesisir utara Jawa Tengah — kawasan yang menghadapi tekanan berlapis dari penurunan muka tanah, banjir rob, dan hilangnya hutan mangrove setiap tahunnya.</span>
+        </p>
       </div>
       <div>
-        <p>The center combines in-situ field survey and water sampling, satellite and drone-based remote sensing, and geospatial modeling — applied to real, named places, not abstractions. Pekalongan's batik-industry estuaries. Demak's disappearing villages. Pemalang's replanted mangrove belt.</p>
+        <p>
+          <span class="lang-en">The center combines in-situ field survey and water sampling, satellite and drone-based remote sensing, and geospatial modeling — applied to real, named places, not abstractions. Pekalongan's batik-industry estuaries. Demak's disappearing villages. Pemalang's replanted mangrove belt.</span>
+          <span class="lang-id">Pusat ini memadukan survei lapangan dan pengambilan sampel air secara langsung, penginderaan jauh berbasis satelit dan drone, serta pemodelan geospasial — diterapkan pada tempat-tempat nyata, bukan sekadar abstraksi. Muara-muara di kawasan industri batik Pekalongan. Desa-desa yang perlahan tenggelam di Demak. Sabuk mangrove hasil rehabilitasi di Pemalang.</span>
+        </p>
       </div>
     </div>
   </div>
@@ -54,17 +84,28 @@ title: Home
   <div class="wrap">
     <div class="section-head">
       <div>
-        <div class="tag">02 — Research programs</div>
-        <h2>Five lines of active work</h2>
+        <div class="tag">
+          <span class="lang-en">02 — Research programs</span><span class="lang-id">02 — Program penelitian</span>
+        </div>
+        <h2>
+          <span class="lang-en">Five lines of active work</span><span class="lang-id">Lima lini penelitian aktif</span>
+        </h2>
       </div>
-      <p><a href="{{ '/research/' | relative_url }}">See all programs &rarr;</a></p>
+      <p><a href="{{ '/research/' | relative_url }}">
+        <span class="lang-en">See all programs &rarr;</span><span class="lang-id">Lihat semua program &rarr;</span>
+      </a></p>
     </div>
     <div class="focus-grid">
       {% for program in site.data.research %}
       <div class="focus-card">
+        {% include photo.html filename=program.photo alt=program.title class="card-photo" %}
         <span class="code">{{ program.code }}</span>
-        <h3>{{ program.title }}</h3>
-        <p>{{ program.summary }}</p>
+        <h3>
+          <span class="lang-en">{{ program.title }}</span><span class="lang-id">{{ program.title_id }}</span>
+        </h3>
+        <p>
+          <span class="lang-en">{{ program.summary }}</span><span class="lang-id">{{ program.summary_id }}</span>
+        </p>
         <div class="sites">{{ program.sites }}</div>
       </div>
       {% endfor %}
@@ -78,10 +119,14 @@ title: Home
   <div class="wrap">
     <div class="section-head">
       <div>
-        <div class="tag">03 — News</div>
-        <h2>Latest from the lab</h2>
+        <div class="tag"><span class="lang-en">03 — News</span><span class="lang-id">03 — Berita</span></div>
+        <h2>
+          <span class="lang-en">Latest from the lab</span><span class="lang-id">Kabar terbaru dari laboratorium</span>
+        </h2>
       </div>
-      <p><a href="{{ '/news/' | relative_url }}">View all news &rarr;</a></p>
+      <p><a href="{{ '/news/' | relative_url }}">
+        <span class="lang-en">View all news &rarr;</span><span class="lang-id">Lihat semua berita &rarr;</span>
+      </a></p>
     </div>
     <ul class="news-list">
       {% for post in site.posts limit: 3 %}
@@ -93,7 +138,12 @@ title: Home
         </div>
       </li>
       {% else %}
-      <li class="news-item"><p>No news posts yet — add Markdown files to <code>_posts/</code> to populate this feed.</p></li>
+      <li class="news-item">
+        <p>
+          <span class="lang-en">No news posts yet — add Markdown files to <code>_posts/</code> to populate this feed.</span>
+          <span class="lang-id">Belum ada berita — tambahkan berkas Markdown ke <code>_posts/</code> untuk mengisi umpan ini.</span>
+        </p>
+      </li>
       {% endfor %}
     </ul>
   </div>
@@ -102,11 +152,16 @@ title: Home
 <section class="contact-block" id="contact-teaser">
   <div class="wrap">
     <div>
-      <h2>Reach the lab</h2>
-      <p>For collaboration, data requests, or student inquiries, CoREM operates out of the Integrated Laboratory building on {{ site.institution }}'s Tembalang campus.</p>
+      <h2><span class="lang-en">Reach the lab</span><span class="lang-id">Hubungi kami</span></h2>
+      <p>
+        <span class="lang-en">For collaboration, data requests, or student inquiries, CoREM operates out of the Integrated Laboratory building on {{ site.institution }}'s Tembalang campus.</span>
+        <span class="lang-id">Untuk kerja sama, permintaan data, atau pertanyaan mahasiswa, CoREM berkantor di Gedung Laboratorium Terpadu, kampus Tembalang, {{ site.institution }}.</span>
+      </p>
     </div>
     <div class="contact-detail">
-      <a href="{{ '/contact/' | relative_url }}">Full contact details &rarr;</a>
+      <a href="{{ '/contact/' | relative_url }}">
+        <span class="lang-en">Full contact details &rarr;</span><span class="lang-id">Detail kontak lengkap &rarr;</span>
+      </a>
     </div>
   </div>
 </section>

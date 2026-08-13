@@ -1,0 +1,12 @@
+{%- comment -%}
+  Usage: {% include photo.html filename="about_photo.png" alt="Description" class="banner" %}
+  If the file hasn't been added to /assets/images/ yet, shows a labeled
+  placeholder instead of a broken image.
+{%- endcomment -%}
+<figure class="photo-frame {{ include.class }}" data-label="assets/images/{{ include.filename }}">
+  <img
+    src="{{ '/assets/images/' | append: include.filename | relative_url }}"
+    alt="{{ include.alt | default: '' }}"
+    loading="lazy"
+    onerror="this.closest('.photo-frame').classList.add('missing')">
+</figure>

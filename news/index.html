@@ -1,8 +1,12 @@
 ---
 layout: page
 title: News
+title_id: Berita
 tag: 06 — News
+tag_id: 06 — Berita
 dek: Updates on fieldwork, publications, and lab activity.
+dek_id: Kabar seputar kegiatan lapangan, publikasi, dan aktivitas laboratorium.
+photo: news_photo.png
 permalink: /news/
 ---
 
@@ -16,6 +20,16 @@ permalink: /news/
     </div>
   </li>
   {% else %}
-  <li class="news-item"><p>No news posts yet — add Markdown files to <code>_posts/</code> to populate this feed.</p></li>
+  <li class="news-item">
+    <p>
+      <span class="lang-en" markdown="1">No news posts yet — add Markdown files to `_posts/` to populate this feed.</span>
+      <span class="lang-id" markdown="1">Belum ada berita — tambahkan berkas Markdown ke `_posts/` untuk mengisi umpan ini.</span>
+    </p>
+  </li>
   {% endfor %}
 </ul>
+
+<p class="page-note">
+  <span class="lang-en">Individual posts appear in whichever language they were written in — this toggle only translates the site's fixed pages and chrome.</span>
+  <span class="lang-id">Setiap tulisan berita tampil dalam bahasa aslinya saat ditulis — tombol ini hanya menerjemahkan halaman dan elemen tetap situs.</span>
+</p>

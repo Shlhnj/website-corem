@@ -61,6 +61,7 @@ nav{
   display:none;
 }
 @media(min-width:720px){ .brand .full{display:inline;} }
+.nav-menu{ display:flex; align-items:center; gap:28px; }
 .navlinks{ display:none; gap:28px; list-style:none; margin:0; padding:0; }
 .navlinks a{
   text-decoration:none; color:var(--ink); font-size:0.92rem;
@@ -81,10 +82,12 @@ nav{
   .navlinks{ display:flex; }
   .nav-toggle{ display:none; }
 }
+.nav-menu{ position:relative; }
 .navlinks.open{
   display:flex; flex-direction:column; gap:14px;
-  position:absolute; top:100%; left:0; right:0; background:var(--paper);
-  padding:20px 32px; border-bottom:1px solid var(--line);
+  position:absolute; top:calc(100% + 18px); right:0; left:auto; min-width:200px;
+  background:var(--paper); border:1px solid var(--line);
+  padding:16px 20px; z-index:10;
 }
 
 /* ---------- hero ---------- */
@@ -235,3 +238,40 @@ footer.site .wrap{ display:flex; justify-content:space-between; flex-wrap:wrap; 
 .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
 .reveal.in{ opacity:1; transform:none; }
 @media (prefers-reduced-motion: reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
+
+/* ---------- language toggle ---------- */
+.lang-id{ display:none; }
+html[data-lang="id"] .lang-en{ display:none; }
+html[data-lang="id"] .lang-id{ display:revert; }
+
+.nav-right{ display:flex; align-items:center; gap:14px; }
+.lang-switch{ display:flex; gap:4px; }
+.lang-btn{
+  font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.02em;
+  padding:5px 9px; border:1px solid var(--line); background:none; cursor:pointer;
+  color:#6B7A74;
+}
+.lang-btn:hover{ border-color:var(--indigo); color:var(--indigo); }
+.lang-btn.active{ background:var(--indigo); color:var(--paper); border-color:var(--indigo); }
+
+/* ---------- photo frame ---------- */
+.photo-frame{
+  position:relative; overflow:hidden; background:var(--paper-deep);
+  border:1px solid var(--line);
+}
+.photo-frame img{ display:block; width:100%; height:100%; object-fit:cover; }
+.photo-frame.banner{ aspect-ratio:21/9; margin-bottom:44px; }
+.photo-frame.card-photo{ aspect-ratio:4/3; }
+.focus-card{ padding-top:0; }
+.focus-card .photo-frame.card-photo{ margin:0 0 4px; }
+.focus-card .code{ margin-top:18px; }
+.photo-frame.missing{
+  display:flex; align-items:center; justify-content:center;
+  min-height:160px; text-align:center; padding:12px;
+}
+.photo-frame.missing img{ display:none; }
+.photo-frame.missing::after{
+  content:"\25C7  " attr(data-label);
+  font-family:'IBM Plex Mono', monospace; font-size:0.7rem;
+  color:#8A9791; letter-spacing:0.02em;
+}
